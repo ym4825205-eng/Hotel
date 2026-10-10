@@ -1,6 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
-    console.log("JavaScript is working!");
-
+document.addEventListener("DOMContentLoaded", function()
     const currentLocation = window.location.href;
     const navLinks = document.querySelectorAll('nav a, header a');
    
