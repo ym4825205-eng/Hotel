@@ -1,10 +1,10 @@
-<div id="liveClock" style="font-size: 22px; font-weight: bold; text-align: center; padding: 15px; background-color: #f1f1f1; border-radius: 5px; margin: 10px 0;"></div>
-
-<script>
-function displayTime() {
-    const time = new Date();
-    document.getElementById("liveClock").innerText = time.toLocaleTimeString();
+var d = new Date();
+var target = document.getElementById("myClock");
+if (target) {
+    target.style.fontSize = "22px";
+    target.style.fontWeight = "bold";
+    target.style.textAlign = "center";
+    target.style.padding = "15px";
+    target.style.color = "#000";
+    target.innerText = "الوقت الحالي: " + d.toLocaleTimeString();
 }
-setInterval(displayTime, 1000);
-window.onload = displayTime;
-</script>
