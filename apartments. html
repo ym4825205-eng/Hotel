@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الشقق المتاحة - نظام الشقق الفندقية</title>
+</head>
+<body>
+
+    <header>
+        <h1>الشقق والأجنحة المتاحة</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="apartments.html">الشقق المتاحة</a></li>
+                <li><a href="booking.html">حجز شقة</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>قائمة الشقق والخيارات</h2>
+
+            <!-- شقة 1 -->
+            <article>
+                <h3>1. جناح ملكي - ثلاث غرف وصالة</h3>
+                <img src="image2.jpg" alt="صورة الجناح الملكي" width="400">
+                <p><strong>الموقع:</strong> إطلالة مباشرة على البحر</p>
+                <p><strong>السعر:</strong> 250 دولار / الليلة</p>
+                <p><strong>المواصفات:</strong> 3 غرف نوم، صالة استقبال كبيرة، مطبخ حديث متكامل، 3 حمامات، وشرفة خاصة.</p>
+                <p><a href="booking.html">احجز هذه الشقة الآن</a></p>
+            </article>
+
+            <br>
+
+            <!-- شقة 2 -->
+            <article>
+                <h3>2. شقة عائلية - غرفتان وصالة</h3>
+                <img src="image3.jpg" alt="صورة الشقة العائلية" width="400">
+                <p><strong>الموقع:</strong> وسط المدينة</p>
+                <p><strong>السعر:</strong> 150 دولار / الليلة</p>
+                <p><strong>المواصفات:</strong> غرفتا نوم، صالة مريحة، مطبخ كامل، وحمامين.</p>
+                <p><a href="booking.html">احجز هذه الشقة الآن</a></p>
+            </article>
+
+            <br>
+
+            <!-- شقة 3 -->
+            <article>
+                <h3>3. استوديو فندقي أنيق</h3>
+                <img src="image4.jpg" alt="صورة استوديو فندقي" width="400">
+                <p><strong>الموقع:</strong> القرب من الحي التجاري</p>
+                <p><strong>السعر:</strong> 90 دولار / الليلة</p>
+                <p><strong>المواصفات:</strong> المساحة مفتوحة وتناسب شخصين، تحتوي على سرير مزدوج وجلسة جانبية ومطبخ تحضيري.</p>
+                <p><a href="booking.html">احجز هذه الشقة الآن</a></p>
+            </article>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 جميع الحقوق محفوظة - نظام الشقق الفندقية</p>
+    </footer>
+
+</body>
+</html>
