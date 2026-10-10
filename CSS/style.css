@@ -1,104 +1,30 @@
 body {
-    font-family: 'Cairo', Tahoma, sans-serif;
-    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
     color: #333333;
     margin: 0;
     padding: 0;
-    direction: rtl;
-    text-align: right;
+    line-height: 1.6;
 }
 
-h1 {
-    color: #1a365d;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 28px;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-    background-color: #ffffff;
-    margin: 15px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
-ul li {
-    display: inline-block;
-    margin: 10px 15px;
-}
-
-ul li a {
-    text-decoration: none;
-    color: #2b6cb0;
+#myClock {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #ffffff;
+    font-size: 20px;
     font-weight: bold;
-    font-size: 16px;
-    padding: 8px 12px;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-ul li a:hover {
-    background-color: #ebf8ff;
-    color: #2c5282;
-}
-
-hr {
-    border: 0;
-    height: 1px;
-    background-color: #e2e8f0;
-    margin: 20px auto;
-    width: 85%;
-}
-
-h2 {
-    color: #2d3748;
     text-align: center;
-    font-size: 22px;
-}
-
-p {
-    text-align: center;
-    color: #4a5568;
-}
-
-form, .container {
-    background: #ffffff;
-    max-width: 600px;
+    padding: 14px 20px;
     margin: 20px auto;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    border: 1px solid #e2e8f0;
+    width: fit-content;
+    min-width: 250px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(30, 60, 114, 0.3);
+    letter-spacing: 1px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease-in-out;
 }
 
-input[type="text"], input[type="email"], select {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0 15px 0;
-    display: inline-block;
-    border: 1px solid #cbd5e0;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-family: 'Cairo', sans-serif;
+#myClock:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(30, 60, 114, 0.4);
 }
-
-button, input[type="submit"] {
-    background-color: #3182ce;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
-    font-size: 16px;
-    font-family: 'Cairo', sans-serif;
-    transition: background-color 0.3s;
-}
-
-button:hover, input[type="submit"]:hover {
-    background-color: #2b6cb;
-                                          }
-  
-
