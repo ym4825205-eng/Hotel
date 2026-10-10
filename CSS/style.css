@@ -118,3 +118,39 @@ footer {
     font-size: 14px;
     border-top: 4px solid #ff4757;
 }
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex !important;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+
+    .nav-links {
+        display: none !important;
+        flex-direction: column;
+        width: 100%;
+        background: rgba(15, 32, 39, 0.98);
+        position: absolute;
+        top: 70px;
+        left: 0;
+        padding: 20px 0;
+        border-radius: 0 0 15px 15px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex !important;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 10px 0;
+    }
+    
+    .navbar {
+        position: relative;
+    }
+}
