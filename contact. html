@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا - نظام الشقق الفندقية</title>
+</head>
+<body>
+
+    <header>
+        <h1>معلومات التواصل والدعم</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="apartments.html">الشقق المتاحة</a></li>
+                <li><a href="booking.html">حجز شقة</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>بيانات الاتصال المباشر</h2>
+            <address>
+                <p><strong>العنوان الرئيسي:</strong> شارع المطار، المبنى رقم 45، المدينة</p>
+                <p><strong>رقم الهاتف:</strong> <a href="tel:+123456789">+123 456 789</a></p>
+                <p><strong>البريد الإلكتروني:</strong> <a href="mailto:info@hotelapartments.com">info@hotelapartments.com</a></p>
+                <p><strong>أوقات العمل:</strong> خدمة العملاء متاحة 24/7 طوال أيام الأسبوع</p>
+            </address>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>موقعنا على الخريطة</h2>
+            <!-- صورة توضيحية لخريطة الموقع -->
+            <img src="image5.jpg" alt="خريطة موقع الشقق الفندقية" width="500">
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>إرسال استفسار مباشر</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="contact-name">الاسم:</label><br>
+                    <input type="text" id="contact-name" name="contact_name" required>
+                </p>
+                <p>
+                    <label for="contact-msg">الرسالة أو الاستفسار:</label><br>
+                    <textarea id="contact-msg" name="contact_msg" rows="5" cols="40" required></textarea>
+                </p>
+                <p>
+                    <button type="submit">إرسال الرسالة</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 جميع الحقوق محفوظة - نظام الشقق الفندقية</p>
+    </footer>
+
+</body>
+</html>
