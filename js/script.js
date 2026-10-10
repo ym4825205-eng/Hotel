@@ -1,5 +1,4 @@
 document.body.style.backgroundColor = "yellow";
-
 document.addEventListener("DOMContentLoaded", function()
     const currentLocation = window.location.href;
     const navLinks = document.querySelectorAll('nav a, header a');
