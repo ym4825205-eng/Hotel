@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حجز شقة - نظام الشقق الفندقية</title>
+</head>
+<body>
+
+    <header>
+        <h1>نموذج حجز شقة فندقية</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="apartments.html">الشقق المتاحة</a></li>
+                <li><a href="booking.html">حجز شقة</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>إدخال بيانات الحجز</h2>
+            <p>يرجى تعبئة النموذج التالي لتأكيد طلب حجز الشقة الفندقية:</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>البيانات الشخصية</legend>
+                    <p>
+                        <label for="fullname">الاسم الكامل:</label><br>
+                        <input type="text" id="fullname" name="fullname" required>
+                    </p>
+                    <p>
+                        <label for="email">البريد الإلكتروني:</label><br>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+                    <p>
+                        <label for="phone">رقم الهاتف / الواتساب:</label><br>
+                        <input type="tel" id="phone" name="phone" required>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>تفاصيل الحجز</legend>
+                    <p>
+                        <label for="apartment-select">اختر الشقة المطلوبة:</label><br>
+                        <select id="apartment-select" name="apartment_select">
+                            <option value="royal">جناح ملكي - ثلاث غرف وصالة</option>
+                            <option value="family">شقة عائلية - غرفتان وصالة</option>
+                            <option value="studio">استوديو فندقي أنيق</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="checkin">تاريخ الوصول:</label><br>
+                        <input type="date" id="checkin" name="checkin" required>
+                    </p>
+                    <p>
+                        <label for="checkout">تاريخ المغادرة:</label><br>
+                        <input type="date" id="checkout" name="checkout" required>
+                    </p>
+                    <p>
+                        <label for="guests">عدد الأفراد:</label><br>
+                        <input type="number" id="guests" name="guests" min="1" max="10" value="1">
+                    </p>
+                    <p>
+                        <label for="notes">ملاحظات أو طلبات خاصة:</label><br>
+                        <textarea id="notes" name="notes" rows="4" cols="40"></textarea>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <p>
+                    <button type="submit">تأكيد وإرسال طلب الحجز</button>
+                    <button type="reset">إعادة ضبط النموذج</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 جميع الحقوق محفوظة - نظام الشقق الفندقية</p>
+    </footer>
+
+</body>
+</html>
