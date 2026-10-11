@@ -7,153 +7,84 @@ body {
     text-align: right;
 }
 
-.header-section, header {
-    background: linear-gradient(135deg, #0d3b45 0%, #1d5f6f 100%);
+/* تنسيق القسم العلوي للهيدر */
+header, .header-section {
+    background: linear-gradient(135deg, #0d3b45 0%, #1d5f6f 100%) !important;
+    color: #ffffff !important;
+    padding: 30px 20px !important;
+    position: relative !important;
+    text-align: center !important;
+}
+
+/* حقن وتوليد أيقونة الهامبرغر في أعلى الهيدر تلقائياً عبر الـ CSS بدون تلمس الـ HTML */
+header::before, .header-section::before {
+    content: "☰";
+    display: block;
+    font-size: 28px;
     color: #ffffff;
-    padding: 20px;
-    position: relative;
-}
-
-.header-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.menu-container, header > div:first-child {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 10px;
-    position: relative;
-}
-
-.menu-btn, header button, header .menu {
-    background: transparent;
-    border: none;
+    text-align: right;
     cursor: pointer;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 22px;
-}
-
-.menu-btn::before, .menu-btn::after, .menu-btn span,
-header button::before, header button::after, header button span {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px;
-    background-color: white;
-    border-radius: 2px;
-}
-
-.dropdown-menu, header ul, header nav {
-    display: none;
-    position: absolute;
-    top: 40px;
-    right: 0;
-    background-color: #ffffff;
-    min-width: 160px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-    border-radius: 8px;
-    z-index: 100;
-    overflow: hidden;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.menu-btn:focus + .dropdown-menu,
-.menu-btn:focus-within + .dropdown-menu,
-.dropdown-menu:hover,
-header button:focus ~ ul,
-header button:focus ~ nav {
-    display: block;
-}
-
-.dropdown-menu a, header ul a, header nav a {
-    color: #0d3b45;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    font-weight: bold;
-    font-size: 15px;
-}
-
-.dropdown-menu a:hover, header ul a:hover, header nav a:hover {
-    background-color: #f0f2f5;
-    color: #ff5e7e;
-}
-
-h1 {
-    font-size: clamp(22px, 4vw, 32px);
-    font-weight: bold;
     margin-bottom: 10px;
-    color: #ffffff;
+    line-height: 1;
 }
 
-p {
-    font-size: clamp(14px, 2vw, 18px);
-    color: #d1d8e0;
-    margin-bottom: 20px;
+/* ضبط العنوان الرئيسي ليكون واضحاً وثابتاً */
+h1 {
+    font-size: 26px !important;
+    font-weight: bold !important;
+    color: #ffffff !important;
+    margin: 10px 0 !important;
 }
 
+/* جعل جميع النصوص في الهيدر واضحة تماماً وغير باهتة */
+header p, .header-section p, p {
+    color: #ffffff !important;
+    opacity: 1 !important;
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+}
+
+/* تنسيق زر الوقت أو الشارة الوردية */
 .time-badge, .badge-timer {
-    background-color: #ff5e7e;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 50px;
-    font-size: clamp(14px, 2.5vw, 18px);
-    font-weight: bold;
-    display: inline-block;
-    box-shadow: 0 4px 15px rgba(255, 94, 126, 0.4);
-    margin-top: 10px;
+    background-color: #ff5e7e !important;
+    color: #ffffff !important;
+    padding: 10px 25px !important;
+    border-radius: 50px !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    display: inline-block !important;
+    margin-top: 15px !important;
+    box-shadow: 0 4px 15px rgba(255, 94, 126, 0.4) !important;
 }
 
+/* تنسيق أقسام المحتوى السفلية */
 section {
-    padding: 20px;
-    background-color: #ffffff;
-    margin: 15px auto;
-    border-radius: 10px;
-    width: 90%;
-    max-width: 1200px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    padding: 25px 20px !important;
+    background-color: #ffffff !important;
+    margin: 20px auto !important;
+    border-radius: 12px !important;
+    width: 90% !important;
+    max-width: 800px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08) !important;
 }
 
 section h2 {
-    color: #0d3b45;
-    font-size: clamp(18px, 3vw, 24px);
-    margin-bottom: 15px;
-    text-align: center;
+    color: #0d3b45 !important;
+    font-size: 22px !important;
+    margin-bottom: 15px !important;
+    text-align: center !important;
+    font-weight: bold !important;
 }
 
+/* النصوص العادية داخل الأقسام لتكون واضحة ومقروءة */
+section p {
+    color: #333333 !important;
+    text-align: right !important;
+}
+
+/* تنسيق الصور لتكون متجاوبة ومرتبة */
 img {
-    width: 100%;
-    height: auto;
-    max-height: 500px;
-    object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-@media (min-width: 768px) {
-    .header-content {
-        align-items: flex-start;
-        text-align: right;
-        padding: 0 40px;
-    }
-    
-    .menu-container, header > div:first-child {
-        justify-content: flex-end;
-    }
-
-    .dropdown-menu, header ul, header nav {
-        right: auto;
-        left: 0;
-    }
-}
-
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 10px !important;
+    box
