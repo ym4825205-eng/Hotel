@@ -123,7 +123,6 @@ footer {
   margin-top: 30px;
   font-size: 0.9rem;
 }
-
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
@@ -143,9 +142,7 @@ footer {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
-  .hamburger:focus + .nav-links,
-  .nav-links:active,
-  .hamburger:active + .nav-links {
+  .nav-links.active {
     max-height: 300px;
     padding: 20px 0;
   }
