@@ -30,7 +30,7 @@ header {
   color: #1e3d59;
 }
 
-.hamburger {
+.menu-toggle {
   display: none;
   flex-direction: column;
   cursor: pointer;
@@ -39,7 +39,7 @@ header {
   gap: 5px;
 }
 
-.hamburger span {
+.menu-toggle span {
   width: 25px;
   height: 3px;
   background-color: #1e3d59;
@@ -123,8 +123,9 @@ footer {
   margin-top: 30px;
   font-size: 0.9rem;
 }
+
 @media (max-width: 768px) {
-  .hamburger {
+  .menu-toggle {
     display: flex;
   }
 
@@ -151,5 +152,3 @@ footer {
     font-size: 1.4rem;
   }
 }
-
-    
