@@ -150,5 +150,19 @@ footer {
 
   .page-title {
     font-size: 1.4rem;
+    #myClock {
+  background-color: #ffffff;
+  color: #00796b;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 20px;
+  margin: 15px auto;
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e0e0e0;
+}
+
   }
 }
